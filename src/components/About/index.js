@@ -38,17 +38,18 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm very ambitious full stack developer. I love Automating tasks.
+            I'm a Computer Science Undergrad student at Indian Institute of
+            Information Technology and Management, Gwalior.
+          </p>
+          <p>
+            I'm a very ambitious Full stack developer. I love Automating tasks.
             Also experinced with Natural Language Processing, Computer Vision.
           </p>
           <p>
             I'm also a competitive coder. Python is my favorite language but
             when it comes to competitive coding, I prefer to use C++.
           </p>
-          <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one problem at a time.
-          </p>
+          <p>In love with Open Source.</p>
           <p>
             If I need to define myself in one sentence that would be an Anime
             Lover, and tech-obsessed!!!
