@@ -43,7 +43,7 @@ const About = () => {
           </p>
           <p>
             I'm a very ambitious Full stack developer. I love Automating tasks.
-            Also experinced with Natural Language Processing, Computer Vision.
+            Also experienced with Natural Language Processing, Computer Vision.
           </p>
           <p>
             I'm also a competitive coder. Python is my favorite language but
