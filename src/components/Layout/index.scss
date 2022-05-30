@@ -124,7 +124,7 @@
   @return unquote($value);
 }
 
-$shadows-small: multiple-box-shadow(1400);
+$shadows-small: multiple-box-shadow(5400);
 $shadows-medium: multiple-box-shadow(400);
 $shadows-big: multiple-box-shadow(200);
 
@@ -139,6 +139,7 @@ html {
   background: transparent;
   box-shadow: $shadows-small;
   animation: animStar 50s linear infinite;
+  border-radius: 50px 50px;
 
   &:after {
     content: ' ';
@@ -148,6 +149,10 @@ html {
     height: 1px;
     background: transparent;
     box-shadow: $shadows-small;
+    border-radius: 50px 50px;
+    border-radius: 50px 50px;
+
+
   }
 }
 #stars2 {
@@ -156,6 +161,7 @@ html {
   background: transparent;
   box-shadow: $shadows-medium;
   animation: animStar 100s linear infinite;
+  border-radius: 50px 50px;
 
   &:after {
     content: ' ';
@@ -165,14 +171,17 @@ html {
     height: 2px;
     background: transparent;
     box-shadow: $shadows-medium;
+    border-radius: 50px 50px;
+
   }
 }
 #stars3 {
-  width: 3px;
+  width: 2px;
   height: 3px;
   background: transparent;
   box-shadow: $shadows-big;
   animation: animStar 150s linear infinite;
+  border-radius: 50px 50px;
 
   &:after {
     content: ' ';
@@ -182,6 +191,7 @@ html {
     height: 3px;
     background: transparent;
     box-shadow: $shadows-big;
+    border-radius: 50px 50px;
   }
 }
 

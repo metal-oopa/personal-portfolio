@@ -9,7 +9,7 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = 'udip'.split('')
+  const nameArray = 'onas'.split('')
   const jobArray = 'Web Developer'.split('')
   const interestArray = 'AI & Blockchain'.split('')
   const enthusiastArray = 'Enthusiast'.split('')

@@ -24,10 +24,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMIAL_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        "service_f5f0diw",
+        "template_6hvz93r",
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        "zk_bSzaCTnm3fnJDN"
       )
       .then(
         () => {
@@ -118,18 +118,18 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Sudip Banerjee
+          Yonas Degu
           <br />
-          Kolkata, <br />
-          West Bengal, <br />
-          India
+          Burayu, <br />
+          Oromia,Addis Abeba <br />
+          Ethiopia
           <br />
         </div>
         <div className="map-wrap">
-          <MapContainer center={[22.56263, 88.36304]} zoom={13}>
+          <MapContainer center={[9.066982, 38.671854]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[22.56263, 88.36304]}>
-              <Popup>Sudip lives here, come over for a cup of coffee :)</Popup>
+            <Marker position={[9.066982, 38.671854]}>
+              <Popup>Yonas lives here, come over for a cup of coffee :)</Popup>
             </Marker>
           </MapContainer>
         </div>

@@ -38,8 +38,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Computer Science Undergrad student at Indian Institute of
-            Information Technology and Management, Gwalior.
+            I'm a Computer Science Undergrad student from Arba Minch University,Ethiopia, SNNPR,Arba Minch
           </p>
           <p>
             I'm a very ambitious Full stack developer. I love Automating tasks.

@@ -3,7 +3,7 @@ import LogoS from '../../assets/images/logo-s.png'
 import codechefLogo from '../../assets/images/codechef.png'
 import LogoSubtitle from '../../assets/images/Sudip_logo_white.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
   faUser,
@@ -47,7 +47,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/sudip-banerjee-300b691bb/"
+              href="www.linkedin.com/in/yonas-degu-8a943a1b5"
               target="_blank"
               rel="noreferrer"
             >
@@ -56,7 +56,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://github.com/metal-oopa"
+              href="https://github.com/yonas34/"
               target="_blank"
               rel="noreferrer"
             >
@@ -65,12 +65,17 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://www.codechef.com/users/metal_oopa"
+              href="https://www.codechef.com/users/yonas34"
               target="_blank"
               rel="noreferrer"
             >
               <img src={codechefLogo} width="24" alt="Codechef" />
             </a>
+          </li>
+
+          <li><a href="https://www.facebook.com/yonas.degu.9">
+          <FontAwesomeIcon icon={faFacebook} color="#b9b9b9" />
+</a>
           </li>
         </ul>
       </div>

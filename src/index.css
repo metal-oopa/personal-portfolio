@@ -7,6 +7,6 @@ body {
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #252525;
+  background-image:linear-gradient(to bottom, rgba(26,95,148,1) 28%,rgba(26,95,148,1) 59%,rgba(26,95,148,0.02) 99%,rgba(26,95,148,0) 100%);
   overflow: hidden;
 }
