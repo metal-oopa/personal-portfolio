@@ -12,7 +12,6 @@ const Home = () => {
   const nameArray = 'udip'.split('')
   const jobArray = 'Blockchain Developer'.split('')
   const interestArray = 'Ethical Hacker'.split('')
-  const enthusiastArray = 'AI/ML Developer'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,13 +46,6 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={interestArray}
-              idx={22}
-            />
-
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={enthusiastArray}
               idx={22}
             />
           </h1>
