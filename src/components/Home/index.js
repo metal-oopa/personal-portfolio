@@ -10,9 +10,9 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = 'udip'.split('')
-  const jobArray = 'Web Developer'.split('')
-  const interestArray = 'AI & Blockchain'.split('')
-  const enthusiastArray = 'Enthusiast'.split('')
+  const jobArray = 'Blockchain Developer'.split('')
+  const interestArray = 'Ethical Hacker'.split('')
+  const enthusiastArray = 'AI/ML Developer'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -31,10 +31,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            />
+            <img src={LogoTitle} alt="Sudip Banerjee" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -61,7 +58,7 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Full Stack Developer / AI and Blockchain Enthusiast / Avid Learner
+            Full Stack Blockchain Developer / Ethical Hacker / AI/ML Developer
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
