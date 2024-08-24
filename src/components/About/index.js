@@ -1,17 +1,18 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
+
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
-  faReact,
   faPython,
+  faReact,
 } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Loader from 'react-loaders'
+
+import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
 const About = () => {

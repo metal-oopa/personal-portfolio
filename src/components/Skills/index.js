@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
+
 import Loader from 'react-loaders'
+
+import WordCloud from './wordcloud'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import WordCloud from './wordcloud'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

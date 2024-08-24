@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+
 import TagCloud from 'TagCloud'
 
 const WordCloud = () => {
@@ -42,7 +43,6 @@ const WordCloud = () => {
     keep: true,
   }
   //   to render wordcloud each time the page is reloaded
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (isLoading) {
       TagCloud(container, texts, options)

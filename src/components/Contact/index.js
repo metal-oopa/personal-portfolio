@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
+
 import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
+import Loader from 'react-loaders'
+import { ClipLoader } from 'react-spinners'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
+  const [loading, setLoading] = useState(false)
   const contactArray = 'Contact Me'.split('')
 
   useEffect(() => {
@@ -21,6 +25,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    setLoading(true)
 
     emailjs
       .sendForm(
@@ -31,7 +36,6 @@ const Contact = () => {
       )
       .then(
         () => {
-          // alert('Message successfully sent!')
           toast.success('Message successfully sent!', {
             position: 'bottom-center',
             autoClose: 3500,
@@ -43,13 +47,14 @@ const Contact = () => {
             theme: 'dark',
           })
           const timeout = setTimeout(() => {
-            window.location.reload(false)
-          }, 3900)
+            form.current.reset()
+            setLoading(false)
+          }, 3800)
 
           return () => clearTimeout(timeout)
         },
         () => {
-          // alert('Failed to send the message, please try again')
+          setLoading(false)
           toast.error('Failed to send the message, please try again', {
             position: 'bottom-center',
             autoClose: 3500,
@@ -75,11 +80,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I am interested in opportunities - especially ambitious or large
-            projects. However, if you have other request or question, don't
-            hesitate to contact me using below form either.
-          </p>
+          <p>I am interested in opportunities. Don't hesitate to contact me.</p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -110,7 +111,13 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <button
+                    type="submit"
+                    className="flat-button"
+                    disabled={loading}
+                  >
+                    {loading ? <ClipLoader color="#fff" size={20} /> : 'SEND'}
+                  </button>
                 </li>
               </ul>
               <ToastContainer />
@@ -129,7 +136,9 @@ const Contact = () => {
           <MapContainer center={[22.56263, 88.36304]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[22.56263, 88.36304]}>
-              <Popup>Sudip lives here, come over for a cup of coffee :)</Popup>
+              <Popup>
+                Sudip lives here, come over for a cup of coffee :{')'}
+              </Popup>
             </Marker>
           </MapContainer>
         </div>
