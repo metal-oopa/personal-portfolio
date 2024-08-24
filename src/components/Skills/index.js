@@ -31,13 +31,17 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I love to keep a variety of tools in my tech stack. I also make sure
-            to be pro at using one tool before moving on to the next. I keep
-            myself up to date with the latest technologies around.
+            I have a strong foundation in both development and operations, with
+            a focus on creating seamless, efficient systems. My experience
+            includes automating deployment processes, designing scalable
+            applications, and working with cloud technologies to deliver
+            reliable solutions.
           </p>
           <p>
-            Looking for a role in a company with the opportunity to work with
-            the latest technologies on challenging and diverse projects.
+            My skill set spans across DevOps, machine learning, full-stack
+            development, and cloud infrastructure. I’m committed to staying
+            updated with the latest advancements and continually refining my
+            expertise to tackle complex challenges effectively.
           </p>
         </div>
 

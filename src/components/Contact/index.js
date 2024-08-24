@@ -80,7 +80,12 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>I am interested in opportunities. Don't hesitate to contact me.</p>
+          <p>
+            I’m always open to new opportunities and collaborations! If you’re
+            looking for someone who can bring fresh ideas and deliver impactful
+            results, let’s get in touch!
+          </p>
+
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>

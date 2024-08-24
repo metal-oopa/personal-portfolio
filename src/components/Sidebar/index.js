@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div className="nav-bar">
         <Link className="logo" to="/">
           <img src={LogoS} alt="Logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+          <img className="sub-logo" src={LogoSubtitle} alt="sudip" />
         </Link>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
@@ -48,7 +48,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/sudip-banerjee-300b691bb/"
+              href="https://www.linkedin.com/in/banerjee-sudip/"
               target="_blank"
               rel="noreferrer"
             >

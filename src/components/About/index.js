@@ -39,21 +39,17 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a Computer Science Undergrad student at Indian Institute of
-            Information Technology and Management, Gwalior.
+            I’m a DevOps and ML Engineer with over 3 years of experience,
+            specializing in automating workflows, optimizing CI/CD pipelines,
+            and deploying intelligent systems. My expertise spans across DevOps,
+            full-stack development, and machine learning, with a strong
+            foundation in security.
           </p>
           <p>
-            I'm a very ambitious Full stack developer. I love Automating tasks.
-            Also experienced with Natural Language Processing, Computer Vision.
-          </p>
-          <p>
-            I'm also a competitive coder. Python is my favorite language but
-            when it comes to competitive coding, I prefer to use C++.
-          </p>
-          <p>In love with Open Source.</p>
-          <p>
-            If I need to define myself in one sentence that would be an Anime
-            Lover, and tech-obsessed!!!
+            I’m passionate about solving real-world problems through innovative
+            technology and continuously learning to stay ahead of industry
+            trends. Whether it's streamlining infrastructure or building
+            scalable applications, I bring a holistic approach to every project.
           </p>
         </div>
 

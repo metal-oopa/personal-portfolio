@@ -12,8 +12,8 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = 'udip'.split('')
-  const jobArray = 'Blockchain Developer'.split('')
-  const interestArray = 'Ethical Hacker'.split('')
+  const jobArray = 'DevOps &'.split('')
+  const interestArray = 'ML Engineer'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -52,7 +52,8 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Full Stack Blockchain Developer / Ethical Hacker / AI/ML Developer
+            Streamlining Workflows | Deploying Intelligent Systems | Building
+            Scalable Applications
           </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
