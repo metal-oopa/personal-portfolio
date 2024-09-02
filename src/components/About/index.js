@@ -2,12 +2,12 @@
 import { useEffect, useState } from 'react'
 
 import {
-  faCss3,
+  faAws,
+  faDocker,
   faGitAlt,
-  faHtml5,
+  faGolang,
   faJsSquare,
   faPython,
-  faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Loader from 'react-loaders'
@@ -59,13 +59,13 @@ const About = () => {
               <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <FontAwesomeIcon icon={faAws} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faDocker} color="#28A4D9" />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon icon={faGolang} color="#5ED4F4" />
             </div>
             <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
