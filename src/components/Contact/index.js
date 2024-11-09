@@ -23,9 +23,26 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault()
     setLoading(true)
+
+    const email = form.current.email.value
+    const res = await verifyEmail(email)
+    if (!res) {
+      setLoading(false)
+      toast.error('Please enter a valid email address', {
+        position: 'bottom-center',
+        autoClose: 3500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: 'dark',
+      })
+      return
+    }
 
     emailjs
       .sendForm(
@@ -67,6 +84,22 @@ const Contact = () => {
           })
         }
       )
+  }
+
+  const verifyEmail = async (email) => {
+    let res = await fetch(
+      `https://mailok-email-validation.p.rapidapi.com/verify?email=${email}`,
+      {
+        method: 'GET',
+        headers: {
+          'x-rapidapi-host': process.env.REACT_APP_RAPIDAPI_HOST,
+          'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY,
+        },
+      }
+    )
+
+    let data = await res.json()
+    return res.status === 200 && data.status === 'valid'
   }
 
   return (
