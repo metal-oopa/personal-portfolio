@@ -18,7 +18,7 @@ const Contact = () => {
   const contactArray = 'Contact Me'.split('')
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
