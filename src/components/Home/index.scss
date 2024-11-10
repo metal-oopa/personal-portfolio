@@ -46,6 +46,7 @@
       height: auto;
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
+      user-select: none;
     }
   }
 
@@ -79,4 +80,13 @@
       color: rgb(0, 0, 0);
     }
   }
+
+  .selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
 }
+

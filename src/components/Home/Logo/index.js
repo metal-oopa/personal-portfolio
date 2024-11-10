@@ -15,6 +15,7 @@ const Logo = () => {
         className="solid-logo"
         ref={solidLogoRef}
         src={LogoS}
+        draggable="false"
         alt="JavaScript,  Developer"
       />
 

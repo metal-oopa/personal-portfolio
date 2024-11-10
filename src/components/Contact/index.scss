@@ -81,6 +81,7 @@
 }
 
 .map-wrap {
+  position: relative;
   background: rgba(8, 253, 216, 0.1);
   float: right;
   width: 53%;
@@ -100,11 +101,11 @@
 .info-map {
   position: absolute;
   background: #000;
-  top: 50px;
-  right: 30%;
+  top: 2%;
+  left: 6%;
   z-index: 1;
-  width: 267px;
-  padding: 20px;
+  width: 30%;
+  padding: 3%;
   color: #fff;
   font-family: 'Helvetica';
   font-size: 17px;

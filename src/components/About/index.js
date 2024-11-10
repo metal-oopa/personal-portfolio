@@ -39,11 +39,11 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a DevOps and ML Engineer with over 3 years of experience,
-            specializing in automating workflows, optimizing CI/CD pipelines,
-            and deploying intelligent systems. My expertise spans across DevOps,
-            full-stack development, and machine learning, with a strong
-            foundation in security.
+            I’m a DevOps and Full Stack Engineer with over 2 years of
+            experience, specializing in automating workflows, optimizing CI/CD
+            pipelines, and deploying intelligent systems. My expertise spans
+            across DevOps, full-stack, blockchain development, and aritificial
+            intelligence, with a strong foundation in security.
           </p>
           <p>
             I’m passionate about solving real-world problems through innovative

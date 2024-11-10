@@ -7,13 +7,14 @@ import Logo from './Logo'
 import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import styles from './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = 'udip'.split('')
-  const jobArray = 'DevOps &'.split('')
-  const interestArray = 'ML Engineer'.split('')
+  const jobArray = 'Software Engineer'.split('')
+  const interestArray = 'FullStack | DevOps | Web3'.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -48,7 +49,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={interestArray}
-              idx={22}
+              idx={30}
             />
           </h1>
           <h2>

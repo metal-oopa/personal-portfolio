@@ -114,9 +114,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I’m always open to new opportunities and collaborations! If you’re
-            looking for someone who can bring fresh ideas and deliver impactful
-            results, let’s get in touch!
+            I’m open to new opportunities and collaborations! If you’re looking
+            for someone who can bring fresh ideas and deliver impactful results,
+            let’s get in touch!
           </p>
 
           <div className="contact-form">
@@ -162,15 +162,15 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Sudip Banerjee
-          <br />
-          Kolkata, <br />
-          West Bengal, <br />
-          India
-          <br />
-        </div>
         <div className="map-wrap">
+          <div className="info-map">
+            Sudip Banerjee
+            <br />
+            Kolkata, <br />
+            West Bengal, <br />
+            India
+            <br />
+          </div>
           <MapContainer center={[22.56263, 88.36304]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[22.56263, 88.36304]}>
