@@ -44,11 +44,27 @@ const Contact = () => {
       return
     }
 
+    let fullName = form.current.name.value
+    let subject = form.current.subject.value
+    let message = form.current.message.value
+
+    let firstName = fullName.split(' ')[0]
+    firstName =
+      firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase()
+
+    const templateParams = {
+      firstname: firstName,
+      name: fullName,
+      subject: subject,
+      message: message,
+      email: email,
+    }
+
     emailjs
-      .sendForm(
+      .send(
         process.env.REACT_APP_EMIAL_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
+        templateParams,
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(

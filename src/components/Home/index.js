@@ -49,7 +49,7 @@ const Home = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={interestArray}
-              idx={30}
+              idx={22}
             />
           </h1>
           <h2>
