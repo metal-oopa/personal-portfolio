@@ -14,7 +14,7 @@ const Home = () => {
 
   const nameArray = 'udip'.split('')
   const jobArray = 'Software Engineer'.split('')
-  const interestArray = 'FullStack | DevOps | Web3'.split('')
+  const interestArray = 'FullStack | DevOps '.split('')
 
   useEffect(() => {
     const timer = setTimeout(() => {
