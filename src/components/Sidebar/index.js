@@ -4,6 +4,7 @@ import {
   faBriefcase,
   faEnvelope,
   faHome,
+  faLaptopCode,
   faScrewdriverWrench,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
@@ -36,6 +37,14 @@ const Sidebar = () => {
             to="/experience"
           >
             <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+          </NavLink>
+
+          <NavLink
+            activeclassname="active"
+            className="projects-link"
+            to="/projects"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} color="#4d4d4e" />
           </NavLink>
 
           <NavLink
